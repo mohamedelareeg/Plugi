@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="1dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="16dp"
+        android:layout_below="@+id/pojoTitle"
+        android:id="@+id/rec_Allsizes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/viewChart"
+        android:gravity="center"
+        android:layout_below="@+id/rec_Allsizes"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_sizes_chart"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

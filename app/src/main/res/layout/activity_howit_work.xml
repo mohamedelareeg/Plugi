@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="5"
+    android:id="@+id/AgentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="4dp">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar_subhome" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbarwrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+
+            android:layout_marginTop="10dp"
+            android:id="@+id/videoWebView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+        </WebView>
+        <TextView
+            android:padding="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem_txt"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:padding="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem_s_txt"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

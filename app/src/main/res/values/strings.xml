@@ -1,0 +1,432 @@
+<resources>
+    <string name="app_name">Plugi</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="loading">Loading</string>
+    <string name="reg_code_is">reg</string>
+    <string name="share_using">share using</string>
+    <string name="there_error">there error</string>
+    <string name="select_iamge">select image</string>
+    <string name="done">Done</string>
+    <string name="required">required</string>
+    <string name="error_mail">Email is not valid</string>
+    <string name="error_web">website not valid</string>
+    <string name="error_phone">Please Enter Valid Phone Number</string>
+    <string name="error_short">Password should have atleast 8 characters.</string>
+    <string name="error_dismach">password dismatch</string>
+    <string name="english">ENGLISH</string>
+    <string name="arabic">عربي</string>
+    <string name="nav_home">HOME</string>
+    <string name="nav_search">SEARCH</string>
+    <string name="nav_account">MY PLUGI</string>
+    <string name="some_thing_wrong_info">there is error</string>
+    <string name="some_thing_wrong">some thing went wrong</string>
+    <string name="there_no_data_info">no data now</string>
+    <string name="there_no_data">Empty</string>
+    <string name="offlineMain">offline</string>
+    <string name="offline_info">check connection</string>
+    <string name="how_its_work">How it Works</string>
+    <string name="tap_anywhere_to_dismiss">Tap anywhere to dismiss</string>
+    <string name="swipe_to_see">Swipe Next to See More</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="log_in_with_twitter">Log In with Twitter</string>
+    <string name="log_in_with_face">Log In with Facebook</string>
+    <string name="log_in_with_google">Log In with Google</string>
+    <string name="email_address">Email Address</string>
+    <string name="Password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">LOGIN</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
+    <string name="confirm_password">Confirm Password</string>
+    <string name="i_agree_to_the_terms_conditions"><![CDATA[I agree to the ]]></string>
+    <string name="facebook_app_id" translatable="false">2818974111446935</string>
+    <string name="agree_to_the_terms_conditions">Agree to terms</string>
+    <string name="unAuthorize">Relogin</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="forget_pas_info">Please enter the email address that is associated with your Plugi account</string>
+    <string name="new_password">New Password</string>
+    <string name="opt">Enter OTP</string>
+    <string name="SUBMIT">SUBMIT</string>
+    <string name="menu">Menu</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="language_switcher">Language Switcher</string>
+    <string name="about_plugi">About Plugi</string>
+    <string name="terms_conditions"><![CDATA[Terms Of Use]]></string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="logout">Logout</string>
+    <string name="heading_for_paragraph">Heading For Paragraph</string>
+    <string name="lorem_txt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_email_id">Enter Email ID</string>
+    <string name="enter_phone">Telephone</string>
+    <string name="lorem_s_txt">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</string>
+    <string name="enter_message">Message</string>
+    <string name="en">EN</string>
+    <string name="ar">AR</string>
+    <string name="enter_valid_email">Please Enter Valid Email</string>
+    <string name="password_should_longer_than_six">"Password Should be longer than 6 "</string>
+    <string name="invild_password">Invaild Password</string>
+    <string name="email_not_exist">Email Not Exist</string>
+    <string name="email_already_exist">Email Already Exist</string>
+    <string name="plase_agree_terms_conditions_first"><![CDATA[Please agree Terms & Conditions]]></string>
+    <string name="password_doesnt_match">Password  does not match</string>
+    <string name="message">Message <font color='#FF0000'>*</font></string>
+    <string name="email_id">Email ID <font color='#FF0000'>*</font></string>
+    <string name="full_name">Full Name <font color='#FF0000'>*</font></string>
+    <string name="telephone">Telephone <font color='#FF0000'>*</font></string>
+    <string name="view_all">View All</string>
+    <string name="mostpopularproducts">Most Popular Products</string>
+    <string name="newlowestasks">New Lowest Asks</string>
+    <string name="lowest_ask">Lowest Ask</string>
+    <string name="currency_kd">KD.</string>
+    <string name="sold">Sold</string>
+
+    <string name="just_now">Just Now</string>
+    <string name="min_ago">a min ago</string>
+    <string name="minites_ago">minutes ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="days_ago">days ago</string>
+    <string name="hour_ago">an hour ago</string>
+    <string name="yesterday">yesterday</string>
+    <string name="today">Today</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="popular_brands">Popular Brands</string>
+    <string name="newhighestbids">New Highest Bids</string>
+    <string name="releasecalender">Release Calender</string>
+    <string name="bid">BID</string>
+    <string name="release_date">Release Date</string>
+    <string name="search_here">Search Here</string>
+    <string name="best_value">Best Value</string>
+    <string name="related_products">Related Products</string>
+    <string name="latest_sales">Latest Sales</string>
+    <string name="condition">Condition:</string>
+    <string name="_condition">Condition</string>
+    <string name="last_sale">Last Sale:</string>
+    <string name="view_all_sales">VIEW ALL  SALES</string>
+    <string name="press_once_again_to_exit">Press once Again To Exit</string>
+    <string name="ok">Ok</string>
+    <string name="okey_i_understand">Okey, I understand</string>
+    <string name="buy">BUY</string>
+    <string name="or_bid">or Bid</string>
+    <string name="highest_bid">Highest Bid:</string>
+    <string name="or_ask">Or Ask</string>
+    <string name="sell">SELL</string>
+    <string name="size">SIZE</string>
+    <string name="all_sizes">All Sizes</string>
+    <string name="all_asks">All Asks</string>
+    <string name="all_bids">All Bids</string>
+    <string name="choose_size">Choose Size</string>
+    <string name="select_mens_size">Select Men`s Size</string>
+    <string name="view_sizes_chart">View Size Chart</string>
+    <string name="agree">AGREE</string>
+    <string name="agree_to_condition_guide_line">Agree to condition guideline</string>
+    <string name="recent_search">Recent Searches</string>
+    <string name="trending">Trending</string>
+    <string name="top_result">Top Result</string>
+    <string name="results">Results</string>
+    <string name="browse">Browse</string>
+    <string name="sort">Sort:</string>
+    <string name="featured">Featured</string>
+    <string name="pojo_count">150</string>
+    <string name="all_sales">All Sales</string>
+    <string name="last_four_transactions_on_this_item_are_shown_below">Last Four Transactions on This item are shown below</string>
+    <string name="sale_price">Sale Price</string>
+    <string name="sale_date">Sale Date</string>
+    <string name="email">Email</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="resend_password">RESEND PASSWORD</string>
+    <string name="resend_code">RESEND CODE</string>
+    <string name="invild_otp_code">Invild Otp Code</string>
+    <string name="signup_with_twitter">Sign Up with Twitter</string>
+    <string name="sign_up_with_google">Sign Up with Google</string>
+    <string name="invild_email_or_password">Invild Email or Password</string>
+    <string name="weak_password">Weak Password , Enter Strong one</string>
+    <string name="please_use_atleast_one_uppercase_letter">Please use atleast one uppercase letter</string>
+    <string name="please_enter_valid_password">Please enter valid password</string>
+    <string name="confirm_new_password">Confirm new Password</string>
+    <string name="password_changed_succ">Your password has been changed successfully!</string>
+    <string name="signup_with_facebook">Sign Up with Facebook</string>
+    <string name="login_with_facebook">Log in with Facebook</string>
+    <string name="filters">Filters</string>
+    <string name="result_views">Results View</string>
+    <string name="sort_by">Sort By</string>
+    <string name="product_category">Product Category</string>
+    <string name="brands">Brands</string>
+    <string name="size_types">Size Types</string>
+    <string name="sizes">Sizes</string>
+    <string name="prices">Prices</string>
+    <string name="release_years">Release Years</string>
+    <string name="below_retail">Below Retail</string>
+    <string name="clear_all">Clear All</string>
+    <string name="see_result">See Result</string>
+    <string name="close">Close</string>
+    <string name="apply">Apply</string>
+    <string name="oh_no">Noting to see here!</string>
+    <string name="try_another_search">Try another search</string>
+    <string name="suggest_a_product">Suggest a poduct.</string>
+    <string name="or">Or</string>
+    <string name="pojo_name">Plugi Guest</string>
+    <string name="view_and_edit_profile">View and Edit Profile</string>
+    <string name="buying">Buying</string>
+    <string name="selling">Selling</string>
+    <string name="closet">Closet</string>
+    <string name="following">Following</string>
+    <string name="faqs">FAQ`s</string>
+    <string name="blog">Blog</string>
+    <string name="wallet">Wallet</string>
+    <string name="currency">Currency</string>
+    <string name="come_back_later">Come back later</string>
+    <string name="lowest_ask_pojo">Lowest Ask :</string>
+    <string name="lorem_item_name">Jorden 4 Retro off-White Sail (W)</string>
+    <string name="place_bid">Place Bid</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="_pojo">|</string>
+    <string name="color">Color:</string>
+    <string name="you_are_about_to_sell_this_item">You`re about to sell this item</string>
+    <string name="processing_fees">Processing Fees</string>
+    <string name="shipping">Shipping</string>
+    <string name="tax">Tax</string>
+    <string name="discount">Discount</string>
+    <string name="total">Total</string>
+    <string name="add_discount">Add Discount</string>
+    <string name="not_value">KD.00.00</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="Review_Purchase">Review Purchase</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="enter_bid">Enter Bid</string>
+    <string name="pojo_currency">KD</string>
+    <string name="bid_expiration">Bid Expiration:</string>
+    <string name="pojo_expiration">30 Days</string>
+    <string name="review_bid">Review Bid</string>
+    <string name="place_ask">Place Ask</string>
+    <string name="sell_now">Sell Now</string>
+    <string name="enter_ask">Enter Ask</string>
+    <string name="payout">Payout</string>
+    <string name="payment_proc">Payment Proc.(9.5%)</string>
+    <string name="ask_expiration">Ask Expiration</string>
+    <string name="get_paid">Get Paid</string>
+    <string name="review_ask">Review Ask</string>
+    <string name="review_sale">Review Sale</string>
+    <string name="all_fees">All fees</string>
+    <string name="payment_card_to_get_paid">Payment Card to get paid</string>
+    <string name="brand_new">is brand new</string>
+    <string name="confirm_sale">Confirm Sale</string>
+    <string name="price_details">Price Details</string>
+    <string name="will_be_shipping_to_plugi_in_2_bussiness_days_of_sale_to_avoid_penalties">Will be Shipping to be PLUGI in 2 business days of sale to avoid penalties</string>
+    <string name="placed_asked">Placed Asked</string>
+    <string name="transaction_fee">Transaction Fee</string>
+    <string name="confirm_ask">Confirm Ask</string>
+    <string name="product_specifications">Product Specifications</string>
+    <string name="style">Style</string>
+    <string name="purchase_price">Purchase price</string>
+    <string name="placed_bid">Placed Bid</string>
+    <string name="bid_confirmed">Bid Confirmed</string>
+    <string name="your_bid_total_is">Your Bid total is:</string>
+    <string name="finish">Finish</string>
+    <string name="remember">Remember</string>
+    <string name="one_pojo">1.</string>
+    <string name="one_seller_note">The Seller is Allowed 2 full business days to skip your item to PLUGI.Weekends and holidays are not business days.</string>
+    <string name="two_pojo">2.</string>
+    <string name="two_seller_note">Our experts authenticators will verify the product when it arrives at PLUGI</string>
+    <string name="three_pojo">3.</string>
+    <string name="three_seller_note">You will receive a tracking number as soon as your item leaves the PLUGI authentication center</string>
+    <string name="share_your_purchase">Share your Purchase</string>
+    <string name="order_confirmed">Order Confirmed</string>
+    <string name="ask_confirmed">Ask Confirmed</string>
+    <string name="sale_confirmed">Sale Confirmed</string>
+    <string name="current_password">Current Password</string>
+    <string name="update_save"><![CDATA[Update & Save]]></string>
+    <string name="country_code">Country Code</string>
+    <string name="pojo_country_code">+965</string>
+    <string name="my_sizes">My Sizes</string>
+    <string name="for_shoes">For Shoes</string>
+    <string name="pojo_size">41</string>
+    <string name="for_clothes">For Clothes</string>
+    <string name="notification_settings">Notifcation Settings</string>
+    <string name="address">Address</string>
+    <string name="add">Add</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="card_no">Card No. :</string>
+    <string name="validity">Validity   :</string>
+    <string name="pojo_progress">65%</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="choose_currency">Choose Currency</string>
+    <string name="choose_address">Choose Address</string>
+    <string name="btn_continue">Continue</string>
+    <string name="expiration_days">Expiration Days</string>
+    <string name="day">Day</string>
+    <string name="choose_payment_method">Choose Payment Method</string>
+    <string name="follow">Follow</string>
+    <string name="add_to_closet">Add to Closet</string>
+    <string name="select_size">Select Size</string>
+    <string name="purchase_date">Purchase Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_price">Select Price</string>
+    <string name="unworm">unWorm</string>
+    <string name="worm">Worm</string>
+    <string name="select_condition">Select Condition</string>
+    <string name="all">All</string>
+    <string name="ask_price">Ask price</string>
+    <string name="bid_price">Bid price</string>
+    <string name="current">Current</string>
+    <string name="pending">Pending</string>
+    <string name="history">History</string>
+    <string name="extend_all_bids">Extend All Bids</string>
+    <string name="_size">Size:</string>
+    <string name="item">Item</string>
+    <string name="bid_amount">Bid Amount</string>
+    <string name="expires">Expires</string>
+    <string name="please_select_shipping_address_first">Please Select Shipping Address</string>
+    <string name="please_select_shipping_payment_first">Please Select Payment Method</string>
+    <string name="please_select_shipping_address_and_payment_first">Please Select Shipping Address And Payment Method</string>
+    <string name="restricted_shipping_to_your_country">this item is not available for shipping to your country</string>
+    <string name="status">Status</string>
+    <string name="price">Price</string>
+    <string name="please_login_first">Please Login First</string>
+    <string name="confirm_bid">Confirm Bid</string>
+    <string name="confirm_buy">Confirm Buy</string>
+    <string name="the_email_address_doesnt_exist">The Email Address doesn\'t exist</string>
+    <string name="code_resened_successfuly_please_check_your_inbox">Code Resended Successfully please check your inbox</string>
+    <string name="sucess">Sucess</string>
+    <string name="check_your_email_address">Code sended Successfully please check your inbox</string>
+    <string name="message_sended_successfuly">Message Sended Successfuly</string>
+    <string name="full_name_">Full Name</string>
+    <string name="telephone_">Telephone</string>
+    <string name="email_">Email</string>
+    <string name="email_req">Email <font color='#FF0000'>*</font></string>
+    <string name="products">Products</string>
+    <string name="one_hun">100%</string>
+    <string name="view_product">View Product</string>
+    <string name="your_bid">Your Bid</string>
+    <string name="bid_details">Bid Details</string>
+    <string name="bid_date">Bid Date</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="review_update_bid">Review/Update BID</string>
+    <string name="authentic">authentic</string>
+    <string name="order">Order</string>
+    <string name="status_">Status:</string>
+    <string name="purchase_details">Purchase Details</string>
+    <string name="paid_with_credit_card">Paid with Credit Card</string>
+    <string name="updated_succ">Updated Successfully</string>
+    <string name="ask_ammount">Ask Amount</string>
+    <string name="selling_date">Selling Date</string>
+    <string name="your_profile_has_been_updated_successfully">Your Profile has been updated Successfully</string>
+    <string name="lowest_ask_">Lowest Ask:</string>
+    <string name="added_successfuly">Added Successfully</string>
+    <string name="removed_successfully">Removed Successfully</string>
+    <string name="plus">+</string>
+    <string name="items_in_closet">Items in Closet</string>
+    <string name="market_value">Market Value</string>
+    <string name="gain_loss">Gain/Loss</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_discount_code">Enter Discount Code</string>
+    <string name="apply_code">Apply Code</string>
+    <string name="please_enter_discount_code">Please Enter Discount Code</string>
+    <string name="invild_code">Invaild Code</string>
+    <string name="unfollow">unFollow</string>
+    <string name="pojo_zero">0</string>
+    <string name="balance">Balance</string>
+    <string name="transacrion_history">Transaction History</string>
+    <string name="transaction_id">Transaction ID :</string>
+    <string name="pojo_price">KD.0</string>
+    <string name="somethinghapping">Somethine went wrong</string>
+    <string name="please_try_again_later">Please Try Again Later</string>
+    <string name="try_again">Try Again</string>
+    <string name="add_address">Add Address</string>
+    <string name="region">Region</string>
+    <string name="address1">Address</string>
+    <string name="address2">Address 2</string>
+    <string name="city">City</string>
+    <string name="zipcode">ZipCode</string>
+    <string name="phone_number">Mobile Number</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/sortingContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/reviewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/popupContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <com.plugi.plugi.core.views.CustomViewPager
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager_container">
+
+
+    </com.plugi.plugi.core.views.CustomViewPager>
+
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,3 @@
+include ':domain'
+include ':app'
+rootProject.name = "Plugi"

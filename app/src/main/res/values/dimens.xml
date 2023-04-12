@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_margin">5dp</dimen>
+
+    <dimen name="rm_switch_standard_height">6dp</dimen>
+    <dimen name="rm_switch_standard_width">17.2dp</dimen>
+    <dimen name="rm_triswitch_standard_width">27.6dp</dimen>
+
+    <dimen name="rm_switch_android_height">2dp</dimen>
+    <dimen name="rm_switch_android_width">8.4dp</dimen>
+    <dimen name="rm_triswitch_android_width">17.2dp</dimen>
+
+    <dimen name="slim_design_height">2dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="defaultMargin">8dp</dimen>
+
+    <dimen name="collapsed_size">60dp</dimen>
+    <dimen name="collapsed_icon_size">32dp</dimen>
+    <dimen name="expanded_icon_size">1dp</dimen>
+    <dimen name="icon_margin">0dp</dimen>
+    <dimen name="default_corner_radius">4dp</dimen>
+    <dimen name="expand_drawable_size">24dp</dimen>
+
+    <dimen name="ms__padding_left">24dp</dimen>
+    <dimen name="ms__padding_top">12dp</dimen>
+    <dimen name="ms__item_height">48dp</dimen>
+    <dimen name="ms__popup_padding_left">24dp</dimen>
+    <dimen name="ms__popup_padding_top">12dp</dimen>
+</resources>

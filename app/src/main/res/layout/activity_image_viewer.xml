@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            style="@style/txt_white_small"
+            android:id="@+id/tvImageDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_border"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:layout_margin="12dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            android:text="@string/done"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp" />
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

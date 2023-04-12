@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/toolbarItem"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="start">
+            <ImageView
+                android:id="@+id/ivBack"
+                android:src="@drawable/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbarCenter"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/toolbarLogo"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_landiing_logo" />
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/toolbarLine"
+                android:layout_width="200dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_line_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="end">
+            <ImageView
+                android:id="@+id/ivShare"
+                android:src="@drawable/ic_share"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="8dp"/>
+            <ImageView
+                android:id="@+id/ivFollow"
+                android:src="@drawable/ic_plus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

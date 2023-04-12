@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/toolbarHome"
+            layout="@layout/toolbar_item" />
+        <RelativeLayout
+            android:layout_below="@id/toolbarHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/parentShimmerLayout3"
+                android:duration="700">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/single_itemdetails"/>
+
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <com.plugi.plugi.core.views.ScrollViewExt
+
+            android:id="@+id/itemScrollView"
+            android:visibility="visible"
+            android:layout_below="@+id/parentShimmerLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+                    <LinearLayout
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RelativeLayout
+
+                            android:layout_marginLeft="@dimen/defaultMargin"
+                            android:layout_marginStart="@dimen/defaultMargin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textAlignment="center"
+                                android:id="@+id/item_size_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/size"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/item_size"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/item_size_title"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/all"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                        <TextView
+
+                            android:layout_gravity="center"
+                            android:layout_marginTop="12dp"
+                            android:id="@+id/viewAllsizes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/all_sizes"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="16dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:padding="4dp"
+
+                            android:background="@color/black"
+                            android:id="@+id/asksPanel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                            <RelativeLayout
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginLeft="@dimen/defaultMargin"
+                                android:layout_marginStart="@dimen/defaultMargin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_alignParentStart="true"
+                                    android:id="@+id/item_ask_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/lowest_ask"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_alignParentStart="true"
+                                    android:id="@+id/item_ask_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/item_ask_title"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/currency_kd"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                            <View
+                                android:layout_marginStart="4dp"
+                                android:layout_width="1dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:background="@color/white" />
+                            <RelativeLayout
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginLeft="@dimen/defaultMargin"
+                                android:layout_marginStart="@dimen/defaultMargin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_alignParentStart="true"
+                                    android:id="@+id/item_pojo_buy"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/buy"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_alignParentStart="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/item_pojo_buy"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/or_bid"
+                                    android:textColor="@color/white"
+                                    android:textSize="10sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/viewAllasks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/all_asks"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginStart="16dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:padding="4dp"
+
+                            android:background="@color/blue"
+                            android:id="@+id/bidsPanel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                            <RelativeLayout
+                                android:layout_marginLeft="@dimen/defaultMargin"
+                                android:layout_marginStart="@dimen/defaultMargin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_alignParentStart="true"
+                                    android:id="@+id/item_bid_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/highest_bid"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_alignParentStart="true"
+                                    android:id="@+id/item_bid_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/item_bid_title"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/currency_kd"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                            <View
+                                android:layout_marginStart="4dp"
+                                android:layout_width="1dp"
+                                android:layout_height="48dp"
+                                android:layout_gravity="center"
+                                android:background="@color/white" />
+                            <RelativeLayout
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginLeft="@dimen/defaultMargin"
+                                android:layout_marginStart="@dimen/defaultMargin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_alignParentStart="true"
+                                    android:id="@+id/item_pojo_sell"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/sell"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_alignParentStart="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/item_pojo_sell"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/or_ask"
+                                    android:textColor="@color/white"
+                                    android:textSize="10sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/viewAllbids"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/all_bids"
+                            android:textColor="@color/blue"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/itemImage"
+                    android:scaleType="fitCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                </ImageView>
+                <com.plugi.plugi.core.views.ProductShowCaseWebView
+                    android:visibility="gone"
+                    android:id="@+id/web_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+                <LinearLayout
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="24dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/productName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+
+                    <LinearLayout
+                        android:id="@+id/conditionPanel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_marginEnd="4dp"
+                            android:text="@string/condition"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginStart="4dp"
+                            android:text="@string/loading"
+                            android:id="@+id/itemCondition"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lastSalePanel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_marginEnd="4dp"
+                            android:text="@string/last_sale"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginStart="4dp"
+                            android:text="@string/loading"
+                            android:id="@+id/itemPrice"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_marginStart="16dp"
+                            android:text="@string/loading"
+                            android:id="@+id/itemPriceDesc"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blue"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/viewAllSales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/view_all_sales"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+                        android:autoLink="web"
+                        android:linksClickable="true"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/relatedPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="2"
+                        android:text="@string/related_products"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_line_blue"
+                        android:layout_gravity="center"/>
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/popularbrandsPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.facebook.shimmer.ShimmerFrameLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/parentShimmerLayout"
+                        android:duration="700">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <include layout="@layout/single_item_view_mini"/>
+                                <include layout="@layout/single_item_view_mini"/>
+                                <include layout="@layout/single_item_view_mini"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_RelatedProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/latestSalesPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="2"
+                        android:text="@string/latest_sales"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_line_blue"
+                        android:layout_gravity="center"/>
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/proceedPanel"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="24dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lorem_txt"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+
+                            />
+                        <Button
+                            android:layout_margin="24dp"
+                            android:id="@+id/btnAccept"
+                            android:paddingStart="32dp"
+                            android:paddingEnd="32dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:background="@color/blue"
+                            android:gravity="center"
+                            style="@style/btnBlue"
+                            android:text="@string/okey_i_understand"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_below="@+id/proceedPanel"
+                        android:id="@+id/all_salesPanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_margin="4dp"
+                            android:id="@+id/pojoTable"
+                            android:layout_below="@+id/pojoTitle"
+                            android:layout_gravity="center"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="9"
+                            android:background="@color/grey_300">
+
+                            <LinearLayout
+                                android:layout_weight="3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_weight="3"
+                                    android:id="@+id/size_sort"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/size"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_weight="3"
+                                    android:layout_marginStart="8dp"
+                                    android:id="@+id/sale_sort"
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/sale_price"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_weight="3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_weight="3"
+                                    android:layout_marginStart="8dp"
+                                    android:id="@+id/date_sort"
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/sale_date"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"/>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_margin="16dp"
+                            android:layout_below="@+id/pojoTable"
+                            android:id="@+id/rec_AllSales"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/propertiesPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp">
+                    <com.facebook.shimmer.ShimmerFrameLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/parentShimmerLayout2"
+                        android:duration="700">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <include layout="@layout/single_item_view_prop"/>
+                                <include layout="@layout/single_item_view_prop"/>
+                                <include layout="@layout/single_item_view_prop"/>
+                                <include layout="@layout/single_item_view_prop"/>
+                                <include layout="@layout/single_item_view_prop"/>
+                                <include layout="@layout/single_item_view_prop"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_Properties"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_margin="8dp"
+                    android:id="@+id/item_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_txt"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+
+                    />
+            </LinearLayout>
+        </com.plugi.plugi.core.views.ScrollViewExt>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

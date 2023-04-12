@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
+
+    <com.plugi.plugi.core.views.expandablePanel.Expandable
+        android:padding="8dp"
+        android:id="@+id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/notification_header_view" />
+
+        <include
+            android:id="@+id/content"
+            layout="@layout/notification_content_view" />
+    </com.plugi.plugi.core.views.expandablePanel.Expandable>
+    <View
+        android:layout_below="@id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_200"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"/>
+
+</RelativeLayout>

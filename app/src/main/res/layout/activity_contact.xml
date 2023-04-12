@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="5"
+    android:id="@+id/AgentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="4dp">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar_subhome" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_below="@+id/toolbarwrap"
+            android:id="@+id/contentPanel"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/contactFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_full_name"
+                app:met_primaryColor="@color/black"
+                android:inputType="textPersonName"
+                app:met_floatingLabel="highlight" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/contactEmailID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_email_id"
+                app:met_primaryColor="@color/black"
+                android:inputType="textEmailAddress"
+                app:met_floatingLabel="highlight" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/contactPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_phone"
+                app:met_primaryColor="@color/black"
+                android:inputType="phone"
+                app:met_floatingLabel="highlight" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:gravity="start"
+                android:id="@+id/contactMessage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="@string/enter_message"
+                app:met_primaryColor="@color/black"
+                android:inputType="text"
+                app:met_floatingLabel="highlight" />
+        </LinearLayout>
+            <TextView
+                android:layout_below="@+id/contentPanel"
+                android:layout_margin="8dp"
+                android:layout_weight="3"
+                android:padding="16dp"
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/black"
+                android:text="@string/SUBMIT"
+                android:elevation="40dp"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+</RelativeLayout>

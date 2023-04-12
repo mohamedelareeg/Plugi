@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/contentPanel"
+        android:layout_gravity="center"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6">
+
+
+
+
+        <TextView
+            android:gravity="start"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:layout_weight="4"
+            android:layout_marginStart="8dp"
+            android:id="@+id/item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/loading"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textAlignment="viewStart"/>
+
+        <TextView
+            android:gravity="start"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:layout_weight="2"
+            android:layout_marginStart="8dp"
+            android:id="@+id/item_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/loading"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textAlignment="viewStart"/>
+    </LinearLayout>
+    <View
+        android:layout_below="@id/contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"/>
+</RelativeLayout>

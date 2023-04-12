@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="start"
+                android:src="@drawable/ic_close"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+            <LinearLayout
+
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu"
+                    android:textColor="@color/black"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbarwrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+            <LinearLayout
+                android:layout_weight="2"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:text="@string/en"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <com.plugi.plugi.core.views.RMSwitch.RMSwitch
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/languageSwitch"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+
+                        app:switchBkgCheckedColor="@color/grey"
+                        app:switchBkgNotCheckedColor="@color/grey"
+                        app:switchDesign="slim"
+                        app:switchToggleCheckedColor="@color/grey_shimmer"
+                        app:switchToggleNotCheckedColor="@color/grey_shimmer"
+                      />
+                    <TextView
+
+                        android:text="@string/ar"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <TextView
+                    android:text="@string/language_switcher"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/contactPanel"
+                android:layout_weight="2"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_contact" />
+                <TextView
+                    android:text="@string/contact_us"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+            <LinearLayout
+                android:id="@+id/aboutPanel"
+                android:layout_weight="2"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_about" />
+                <TextView
+                    android:text="@string/about_plugi"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/termsPanel"
+                android:layout_weight="2"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_terms" />
+                <TextView
+                    android:text="@string/terms_conditions"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+            <LinearLayout
+                android:id="@+id/privacyPanel"
+                android:layout_weight="2"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_privacy" />
+                <TextView
+                    android:text="@string/privacy_policy"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/logoutPanel"
+                android:layout_weight="2"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_logout" />
+                <TextView
+                    android:id="@+id/loginStatus"
+                    android:text="@string/log_in"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/parentShimmerLayout"
+                android:duration="700">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                        <include layout="@layout/social_row_view"/>
+                        <include layout="@layout/social_row_view"/>
+                        <include layout="@layout/social_row_view"/>
+                        <include layout="@layout/social_row_view"/>
+                        <include layout="@layout/social_row_view"/>
+                        <include layout="@layout/social_row_view"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
+                android:layout_below="@+id/parentShimmerLayout"
+                android:layout_gravity="center"
+                android:id="@+id/recSocial"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

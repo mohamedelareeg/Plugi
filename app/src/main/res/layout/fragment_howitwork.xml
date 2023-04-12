@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.main.MainActivity">
+
+    <include
+        android:id="@+id/toolbarHome"
+        layout="@layout/toolbar_subhome" />
+    <ScrollView
+        android:layout_below="@id/toolbarHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/searchProductsPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.facebook.shimmer.ShimmerFrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parentShimmerLayout"
+            android:duration="700">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/single_row_view"/>
+                <include layout="@layout/single_row_view"/>
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/contentPanel"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <WebView
+
+                android:layout_marginTop="10dp"
+                android:id="@+id/videoWebView"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+            </WebView>
+            <TextView
+                android:id="@+id/hiwDesc"
+                android:padding="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem_txt"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:padding="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem_s_txt"
+                android:textSize="14sp"/>
+        </LinearLayout>
+        <!--Views for No Internet connection-->
+        <LinearLayout
+            android:visibility="gone"
+            android:padding="32dp"
+            android:id="@+id/viewNoItems"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:textAlignment="center"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/oh_no"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:typeface="monospace"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/come_back_later"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

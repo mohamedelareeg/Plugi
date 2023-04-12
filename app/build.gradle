@@ -1,0 +1,147 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.0"
+
+    defaultConfig {
+        applicationId "com.plugi.plugi"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.android.material:material:1.1.0'
+
+    // swipe to refresh
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+// indicator
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3'
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.0"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.0"
+    // rating bar
+    implementation 'com.github.ome450901:SimpleRatingBar:1.4.3'
+    // corouties
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0'
+    // Retrofit dependencies
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.okhttp3:okhttp:4.4.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.0'
+    //For serialising JSONP add converter-scalars
+    implementation 'com.squareup.retrofit2:converter-scalars:2.7.0'
+    //progress Dialog
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+    //picasso//
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    // shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    // socket
+    implementation('com.github.nkzawa:socket.io-client:0.6.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+    //viewPager
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'com.duolingo.open:rtl-viewpager:2.0.0'
+    //fab
+    implementation 'com.github.clans:fab:1.6.4'
+    // date Picker
+    implementation 'com.applandeo:material-calendar-view:1.8.0-rc01'
+    //timer
+    implementation 'com.github.iwgang:countdownview:2.1.6'
+    // flowLayout Manger
+    implementation 'com.google.android:flexbox:2.0.1'
+    //downdown
+    implementation 'com.github.douglasspgyn:CircularCountdown:0.3.0'
+    //firebase
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.1'
+    api project(path: ':domain')
+    // maps
+    // places
+    implementation 'com.google.android.libraries.places:places:2.3.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+    // picker
+    implementation 'com.github.florent37:inline-activity-result-kotlin:1.0.4'
+    implementation 'com.github.dhaval2404:imagepicker:1.7.5'
+    // google services & facebook
+    implementation 'com.google.android.play:core:1.8.0'
+    implementation 'com.google.android.gms:play-services-wallet:18.0.0'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.facebook.android:facebook-android-sdk:5.9.0'
+
+    implementation 'klogi.com:rtlviewpager:1.0.0'
+    implementation 'com.moos:Material-BottomBarLayout:1.0.5'
+    //RecycleView : Required
+    implementation 'com.nineoldandroids:library:2.4.0'
+
+    implementation 'com.github.florent37:shapeofview:1.4.7'
+
+    //Stylish edittextbox
+    implementation 'com.github.florent37:materialtextfield:1.0.7'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    implementation 'com.androidadvance:topsnackbar:1.1.1'
+
+    // glide image dependency
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //autoSliding
+    implementation 'com.github.smarteist:autoimageslider:1.3.9'
+    //searchBar
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.5'
+
+    // Event Bus Library
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    implementation 'com.kyleduo.switchbutton:library:2.0.2'
+
+
+}
+apply plugin: 'com.google.gms.google-services'

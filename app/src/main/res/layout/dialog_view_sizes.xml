@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="1dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/titleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_close_black"
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+        <LinearLayout
+
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_size"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/pojoTitle"
+        android:layout_below="@+id/titleContainer"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_mens_size"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="16dp"
+        android:layout_below="@+id/pojoTitle"
+        android:id="@+id/rec_Allsizes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/viewChart"
+        android:gravity="center"
+        android:layout_below="@+id/rec_Allsizes"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_sizes_chart"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

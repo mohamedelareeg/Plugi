@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/nav_home"/>
+
+    <item
+        android:id="@+id/nav_search"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_search"
+        android:title="@string/nav_search"/>
+
+    <item
+        android:id="@+id/nav_account"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_account"
+        android:title="@string/nav_account"/>
+
+</menu>

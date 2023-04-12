@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="1dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/titleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_close_black"
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_below="@+id/titleContainer"
+        android:id="@+id/btnFollow"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:background="@drawable/draw_text"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:text="@string/follow"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_below="@+id/btnFollow"
+        android:id="@+id/btnCloset"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:text="@string/add_to_closet"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

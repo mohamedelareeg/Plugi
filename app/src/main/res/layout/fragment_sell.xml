@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".feature.login.LoginActivity">
+
+    <include
+        android:id="@+id/toolbarHome"
+        layout="@layout/toolbar_basic" />
+    <LinearLayout
+        android:layout_below="@id/toolbarHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlSelection"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/tabLayoutStyle"
+        app:tabPaddingStart="32dp"
+        app:tabPaddingEnd="32sp"
+
+        app:tabIndicatorColor="@color/transparent"
+        android:layout_marginTop="10dp"
+        app:tabTextColor="#999999"
+        app:tabSelectedTextColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/place_ask" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sell_now" >
+
+        </com.google.android.material.tabs.TabItem>
+
+
+    </com.google.android.material.tabs.TabLayout>
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6">
+        <ImageView
+            android:id="@+id/placeLine"
+            android:visibility="invisible"
+            android:layout_weight="3"
+            android:layout_marginStart="32dp"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_line_blue"/>
+        <ImageView
+            android:id="@+id/nowLine"
+            android:visibility="invisible"
+            android:layout_weight="3"
+            android:layout_marginStart="48dp"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_line_blue"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/itemContainer"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/toolbarHome"
+            layout="@layout/toolbar_basic" />
+        <LinearLayout
+            android:layout_below="@id/toolbarHome"
+            android:id="@+id/searchPanel"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+            <LinearLayout
+                android:layout_weight="6"
+                android:background="@drawable/draw_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.mancj.materialsearchbar.MaterialSearchBar
+                    android:id="@+id/searchProductTXT"
+                    style="@style/MaterialSearchBarLight"
+                    android:background="@drawable/draw_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    app:mt_maxSuggestionsCount="0"
+                    app:mt_placeholder="@string/search_here" />
+            </LinearLayout>
+
+            <TextView
+                android:padding="2dp"
+                android:background="@drawable/draw_box"
+                android:layout_marginStart="8dp"
+                android:textSize="32sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="2"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:text="@string/plus"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detailsPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/searchPanel">
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/draw_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="8">
+                <ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:padding="4dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_closet_items"
+                    />
+                <TextView
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/items_in_closet"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="start"/>
+                <TextView
+                    android:id="@+id/txItemCount"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pojo_zero"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+
+                    android:layout_marginEnd="8dp"
+                    android:gravity="end"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/draw_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="8">
+                <ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:padding="4dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_amount"/>
+                <TextView
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/market_value"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="start"/>
+                <TextView
+                    android:id="@+id/txMarketValue"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pojo_zero"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+
+                    android:layout_marginEnd="8dp"
+                    android:gravity="end"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/draw_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="8">
+                <ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:padding="4dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_gain_loss"/>
+                <TextView
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gain_loss"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="start"/>
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="end">
+                    <TextView
+                        android:id="@+id/txGainLoss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pojo_zero"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                       />
+                    <TextView
+                        android:layout_marginStart="4dp"
+                        android:padding="4dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/plus"
+                        android:textColor="@color/blue"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/sortingPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailsPanel">
+            <LinearLayout
+                android:id="@+id/itemSortingPanel"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/item"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_arrow_down_black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/marketValueSortingPanel"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/size_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/market_value"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_arrow_down_blue"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/sortingPanel"
+            android:id="@+id/pojoLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_400"/>
+
+        <RelativeLayout
+            android:layout_below="@id/pojoLine"
+            android:id="@+id/searchProductsPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/parentShimmerLayout"
+                    android:duration="700">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/single_row_view"/>
+                        <include layout="@layout/single_row_view"/>
+                        <include layout="@layout/single_row_view"/>
+                        <include layout="@layout/single_row_view"/>
+                        <include layout="@layout/single_row_view"/>
+                        <include layout="@layout/single_row_view"/>
+                        <include layout="@layout/single_row_view"/>
+                        <include layout="@layout/single_row_view"/>
+                        <include layout="@layout/single_row_view"/>
+                        <include layout="@layout/single_row_view"/>
+                        <include layout="@layout/single_row_view"/>
+                        <include layout="@layout/single_row_view"/>
+
+                    </LinearLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_ClosetItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:scrollbars="vertical"
+                    />
+            </LinearLayout>
+
+            <!--Views for No Internet connection-->
+            <LinearLayout
+                android:visibility="gone"
+                android:padding="32dp"
+                android:id="@+id/viewNoItems"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:textAlignment="center"
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/oh_no"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:typeface="monospace"/>
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/try_another_search"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/or"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_marginStart="16dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/suggest_a_product"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_below="@+id/categoryPanel"
+            android:visibility="gone"
+            android:id="@+id/suggestContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <FrameLayout
+            android:layout_below="@+id/suggestContainer"
+            android:id="@+id/CategorySearchContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+</ScrollView>

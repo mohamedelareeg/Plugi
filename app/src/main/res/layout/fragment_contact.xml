@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="5"
+    android:id="@+id/AgentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="4dp">
+
+
+    <include
+        android:id="@+id/toolbarHome"
+        layout="@layout/toolbar_subhome" />
+    <ScrollView
+        android:layout_below="@id/toolbarHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <RelativeLayout
+
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <LinearLayout
+
+        android:layout_marginTop="8dp"
+        android:id="@+id/contentPanel"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <EditText
+            android:inputType="textPersonName"
+            android:id="@+id/contactFullName"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            style="@style/edittext"
+            android:hint="@string/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginTop="16dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/contactEmailID"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            style="@style/edittext"
+            android:hint="@string/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginTop="16dp"
+            android:inputType="phone"
+            android:id="@+id/contactPhone"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            style="@style/edittext"
+            android:hint="@string/telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+
+            android:layout_marginTop="16dp"
+            android:inputType="text"
+            android:id="@+id/contactMessage"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            style="@style/edittext"
+            android:gravity="start"
+            android:hint="@string/message"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/contentPanel"
+        android:id="@+id/btnSubmit"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        style="@style/btn"
+        android:text="@string/SUBMIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </TableLayout>
+    </ScrollView>
+</RelativeLayout>

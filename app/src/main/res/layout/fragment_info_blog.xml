@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.main.MainActivity">
+
+    <include
+        android:id="@+id/toolbarHome"
+        layout="@layout/toolbar_basic" />
+    <ScrollView
+        android:layout_below="@id/toolbarHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/searchProductsPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parentShimmerLayout"
+            android:duration="700">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/single_row_view"/>
+                <include layout="@layout/single_row_view"/>
+                <include layout="@layout/single_row_view"/>
+                <include layout="@layout/single_row_view"/>
+                <include layout="@layout/single_row_view"/>
+                <include layout="@layout/single_row_view"/>
+                <include layout="@layout/single_row_view"/>
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <RelativeLayout
+            android:id="@+id/contentPanel"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:id="@+id/blogIMG"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="fitCenter"
+                />
+            <LinearLayout
+                android:layout_below="@+id/blogIMG"
+                android:padding="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/blogTitle"
+                    android:textAlignment="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/blogOwner"
+                        android:layout_marginTop="2dp"
+                        android:textAlignment="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="4dp"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:textAlignment="center"
+                        android:layout_marginStart="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="2dp"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/blogDate"
+                        android:layout_marginTop="2dp"
+                        android:textAlignment="center"
+                        android:layout_marginStart="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="4dp"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/blogDesc"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_txt"
+                    android:textColor="@color/grey"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+
+                    />
+                <WebView
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/videoWebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp">
+                </WebView>
+                <TextView
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/blogDesc2"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_s_txt"
+                    android:textColor="@color/grey"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+
+                    />
+                <LinearLayout
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/draw_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/blogitemIMG"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pojo_shoes"
+
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/blogItemName"
+                    android:textAlignment="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lorem_item_name"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/blogItemType"
+                        android:layout_marginTop="2dp"
+                        android:textAlignment="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lowest_ask_pojo"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="4dp"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/blogItemPrice"
+                        android:layout_marginTop="2dp"
+                        android:textAlignment="center"
+                        android:layout_marginStart="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:textColor="@color/blue"
+                        android:layout_marginEnd="4dp"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/relatedPanel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="2"
+                        android:text="@string/products"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_line_blue"
+                        android:layout_gravity="center"/>
+
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/relatedPanelInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.facebook.shimmer.ShimmerFrameLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/parentShimmerLayout2"
+                        android:duration="700">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <include layout="@layout/single_item_view_mini"/>
+                                <include layout="@layout/single_item_view_mini"/>
+                                <include layout="@layout/single_item_view_mini"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rec_RelatedProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <!--Views for No Internet connection-->
+        <LinearLayout
+            android:visibility="gone"
+            android:padding="32dp"
+            android:id="@+id/viewNoItems"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:textAlignment="center"
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/oh_no"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:typeface="monospace"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/come_back_later"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
