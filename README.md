@@ -9,6 +9,9 @@ Plugi is an Android application that provides a platform for bidding and online 
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Configuration](#configuration)
+- [Running the Application](#running-the-application)
+  - [Debugging](#debugging)
+  - [Release Build](#release-build)
 - [Built With](#built-with)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
@@ -43,9 +46,42 @@ Plugi is an Android application that provides a platform for bidding and online 
 
 Ensure you have the required API keys and configurations for Firebase services. Update the necessary files with your configurations.
 
+## Running the Application
+
+### Debugging
+
+To run the application in debug mode:
+
+1. Connect an Android device or use an emulator.
+2. In Android Studio, select "Run" from the toolbar.
+3. Choose the connected device/emulator and click "OK" to build and run the app.
+
+### Release Build
+
+To build a release version of the application:
+
+1. Open the terminal in Android Studio.
+2. Navigate to the project root directory.
+3. Run the following command:
+
+   ```bash
+   ./gradlew assembleRelease
+   
+This command generates the release APK in the app/build/outputs/apk/release/ directory.
+
+### Publishing
+To publish the application to the Google Play Store:
+
+1. gnerate a signing configuration for the release build in the app/build.gradle file.
+2. Build the release version using the steps mentioned above.
+3. In Android Studio, select "Build" > "Build Bundle(s) / APK(s)" > "Build APK(s)".
+4. The generated APK will be available in the app/build/outputs/apk/release/ directory.
+
+Follow the Play Console guidelines to create a new release, upload the APK, and publish the app.
+
 ## Built With
 
-- [Kotlin](https://kotlinlang.org/) - The primary programming language.
+- [Java](https://www.java.com/) - The primary programming language.
 - [Firebase](https://firebase.google.com/) - Comprehensive mobile and web app development platform.
 - [Socket.IO](https://socket.io/) - Real-time bidirectional event-based communication.
 - [Retrofit](https://square.github.io/retrofit/) - Type-safe HTTP client for Android and Java.
