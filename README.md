@@ -26,6 +26,14 @@ Plugi is an Android application that provides a platform for bidding and online 
 - **Real-time Communication:** Utilizes socket.io for real-time communication.
 - **Maps Integration:** Integrates Google Maps and Places API for location-based features.
 - **Firebase Analytics and Messaging:** Utilizes Firebase for analytics and push notifications.
+## Home Page
+
+![Home Page](3_Home.png)
+
+## Product Details
+
+![Product Details](5_ProductDetail.png)
+
 
 ## Getting Started
 
